@@ -1,0 +1,2 @@
+I was able to add a counter, but couldn't figure out how to display it on screen, so it is viewable from the console. Didn't know where to start with the intermediate/advanced - I want to learn! I am ashamed that I couldn't at my current level. 
+I changed the colors to something I liked more, and was able to add the onigiri at least as that was pretty simple. 
