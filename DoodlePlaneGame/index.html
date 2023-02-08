@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doodle Plane!</title>
+</head>
+<body>
+	<style type="text/css">
+		#paper {
+			background-image: url("paper.jpg");
+			width: 900px;
+			height: 700px;
+		}
+		.player {
+			position: absolute;
+			background-image: url("player.png");
+			width: 70px;
+			height: 75px;
+		}
+		.enemy {
+			position: absolute;
+			background-image: url("enemy.png");
+			width: 70px;
+			height: 75px;
+		}
+		.missile {
+			position: absolute;
+			background-image: url("missile.png");
+			width: 5px;
+			height: 25px;
+		}
+	</style>
+
+	<div id="paper">
+		<div id="players"></div>
+		<div id="enemies"></div>
+		<div id="missiles"></div>
+	</div>
+
+	<script type="text/javascript">
+		
+	var player = {
+		left: 450,
+		top: 630
+	}
+
+	var enemies = [
+		{left: 350, top: 200},
+		{left: 450, top: 200},
+		{left: 250, top: 200},
+		{left: 550, top: 200},
+	]
+
+	var missiles = []
+
+
+	function drawPlayer(){
+		content = "<div class='player'style='left: "+player.left+"px; top:"+player.top+"px'></div>";
+		document.getElementById("players").innerHTML = content;
+
+	}
+
+	function drawEnemies() {
+		content = "";
+		console.log(enemies);
+		for(var idx = 0; idx<enemies.length; idx++){
+			content += "<div class='enemy'style='left: "+enemies[idx].left+"px; top:"+enemies[idx].top+"px'></div>";
+		}
+		document.getElementById("enemies").innerHTML = content;
+	}	
+
+	function moveEnemies() {
+		for(var idx = 0; idx<enemies.length; idx++){
+			enemies[idx].top = enemies[idx].top + 5;
+		}
+	}
+
+	function drawMissiles() {
+		content = "";
+		for(var idx=0; idx<missiles.length; idx++) {
+			content += "<div class='missile' style='left: "+missiles[idx].left+"px; top: "+missiles[idx].top+"px'></div>"
+		}
+		document.getElementById("missiles").innerHTML = content;
+	}
+
+	function moveMissiles() {
+		for(var idx = 0; idx<missiles.length; idx++){
+			missiles[idx].top = missiles[idx].top - 10;
+	}
+}
+
+	document.onkeydown = function(e) {
+		if(e.keyCode == 37 && player.left > 0) {//left
+			player.left = player.left - 10;
+		}
+		if(e.keyCode == 39 && player.left < 840) {//right
+			player.left = player.left + 10;
+		}
+		if(e.keyCode == 40 && player.top < 630) {//down
+			player.top = player.top + 10;
+		}
+		if(e.keyCode == 38 && player.top > 480) {//up
+			player.top = player.top - 10;
+		}
+		if(e.keyCode == 32) {// spacebar
+			missiles.push({left: (player.left + 33), top: (player.top-8)});
+			drawMissiles()
+		}
+		drawPlayer();
+	}
+
+
+	function gameLoop(){
+		console.log("The timer has started!")
+
+		drawPlayer()
+
+		drawEnemies()
+		moveEnemies()
+		moveMissiles()
+		drawMissiles()
+
+		setTimeout(gameLoop, 100)
+		}
+
+	gameLoop();
+
+
+
+	</script>
+
+</body>
+</html>
