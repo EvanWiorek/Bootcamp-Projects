@@ -1,0 +1,37 @@
+h1  {
+    text-align: center;
+    color: #424f6a;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-top: 0px;
+}
+.container   {
+    margin: auto;
+    background-color: #eef3f8;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+img     {
+    width: 160px;
+}
+.row1   {
+    display: flex;
+    justify-content: space-around;
+    background-color: #007b8b;
+    padding: 12px;
+    margin: 10px;
+}
+.row2   {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #00a0ff;
+    padding: 12px;
+    margin: 10px;
+}.row3   {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("istockphoto-1147034254-170667a.jpg");
+    padding: 12px;
+    margin: 10px;
+}
