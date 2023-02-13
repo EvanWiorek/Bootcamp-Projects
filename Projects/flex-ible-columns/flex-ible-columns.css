@@ -1,0 +1,25 @@
+*   {
+    font-family: Roboto, sans-serif;
+}
+.row    {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+
+}
+.col, .col-2   {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #5f9ea0;
+}
+.col-2, .col-3  {
+    flex: 2
+}
+.col-3  {
+    flex: 3;
+    padding: 20px;
+    margin: 10px;
+    background-color: #5f9ea0;
+}
