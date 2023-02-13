@@ -1,0 +1,27 @@
+.search {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #3fbbbd;
+    border: 2px solid #3fbbbd;
+    border-radius: 15px;
+    margin: 40px 0px 10px 40px;
+    padding: 3px 40px 3px 40px;
+}
+.plus   {
+    border: 0px;
+    border-radius: 50%;
+    font-size: 160%;
+    padding: 3px 10px 2px 10px;
+    background-color: #00d1b2;
+    color: white;
+    margin-left: 40px;
+}
+.account    {
+    background-color: #2b78e4;
+    color: white;
+    margin: 10px 0px 10px 40px;
+    padding: 5px 30px 5px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    box-shadow: 3px 3px black;
+}
