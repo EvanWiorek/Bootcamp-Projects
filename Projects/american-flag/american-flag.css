@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    background-color: rgb(225, 0, 0);
+    height: 28px;
+    width: 420px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.red2 {
+    background-color: rgb(225, 0, 0);
+    height: 28px;
+    width: 700px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.white2 {
+    height: 29px;
+    width: 700px;
+}
+
+.blue {
+    background-image: url("American Blue.png");
+    height: 199px;
+    width: 280px;
+    margin-right: -4px
+}
+
+.white {
+    height: 29px;
+    width: 420px;
+}
+
+.container1 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container2 {
+    display: inline-block;
+}
