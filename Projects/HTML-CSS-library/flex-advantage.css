@@ -1,0 +1,53 @@
+.container1 {
+    width: 720px;
+    height: 250px;
+    background-color: silver;
+}
+.col1 {
+    width: 220px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    display: inline-block;
+}
+.container2 {
+    width: 720px;
+    height: 250px;
+    background-color: silver;
+}
+    
+.col2 {
+    width: 220px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    display: inline-block;
+}
+
+/*can also use flex-start and flex-end IN align-items*/
+.container3 {
+    width: 720px;
+    height: 250px;
+    background-color: silver;
+    display: flex;
+    align-items: flex-start;
+}
+    
+.col3 {
+    width: 220px;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+.row {
+    display: flex;
+}
+.col4, .col5 {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: lightcyan;
+}
+.col5   {
+    flex: 3;
+}
+
+
+

@@ -1,0 +1,66 @@
+/*width and height*/
+a {
+    width: 25px;
+  }
+  div {
+    width: 100%;
+    height: 200px;
+  }
+  img {
+    width: 250px;
+  }
+
+ /* font size */
+  h3 {
+    font-size: 10pt;
+  }
+  p {
+    font-size: 14px;
+  }
+  a {
+    font-size: 1.2em;
+  }
+  span {
+    font-size: 80%;
+  }
+
+   /* overflow */
+   div {
+    overflow: scroll;
+  }
+  div {
+    overflow: hidden;
+  }
+
+  /* background */
+  p {
+    background: #ffffff url("cherries.png") no-repeat fixed center;
+  }
+
+  p {
+    background-color: blue;
+  }
+  div {
+    background-image: url("cherries.png");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+/* border */
+button {
+    border: 2px dotted green;
+  }
+  div {
+    border: 1px solid #000000;
+  }
+  p {
+    border-right: 1px groove rgb(100,100,100);
+    border-left: 1px groove rgb(200,200,200);
+  }
+
+  button {
+    border-radius: 5px;
+  }
+
+
