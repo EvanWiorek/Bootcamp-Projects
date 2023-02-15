@@ -37,6 +37,7 @@
     box-shadow: 3px 3px black;
     padding: 5px 12px 5px 12px;
     font-size: .9em;
+    cursor: pointer;
 }
 
 /*Main Container*/
@@ -78,6 +79,7 @@
     padding: 5px 10px 5px 10px;
     background-color: #ffd966;
     box-shadow: 3px 3px black;
+    cursor: pointer;
 }
 
 
@@ -98,6 +100,7 @@
     margin-top: 15px;
     font-size: .9em;
     color: black;
+    cursor: pointer;
 }
 
 
