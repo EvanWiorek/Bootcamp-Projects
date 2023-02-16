@@ -1,5 +1,4 @@
-
-<p align="center"><img src="https://user-images.githubusercontent.com/124269000/219446304-8343ece9-0bd9-4f6d-887b-32648d707406.svg" width="700" /></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/124269000/219448710-45c3eb52-7e32-4161-99cb-0ac6b64cc895.svg" width="800" /></p>
 <br>
 
 <h2 align="center"> Projects I've made during my time at Coding Dojo:<h2>
