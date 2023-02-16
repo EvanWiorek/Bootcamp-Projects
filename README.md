@@ -1,5 +1,4 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/124269000/219454849-2169b5ad-8187-44af-90c7-e22081533895.svg" width="800" /></p>
-<br>
 
 <h2 align="center"> Projects I've made during my time at Coding Dojo:<h2>
 
