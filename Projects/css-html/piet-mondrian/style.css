@@ -1,3 +1,4 @@
+
 *   {
     margin: 0px;
     padding: 0px;
@@ -5,88 +6,142 @@
     font-weight: 400;
 }
 
-.container  {
-    border: 20px double #5c3510;
-    background-color: #714013;
-    margin-top: 60px;
-    margin-bottom: 30px;
-    box-shadow: 0px 4px 10px rgb(83, 83, 83);
+
+body    {
+    background-image: linear-gradient(rgb(200, 200, 200), rgb(143, 143, 143));
+    height: 43.7rem;
 }
 
-body  {
+.main  {
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    background-color: rgb(206, 206, 206);
+    gap: 10em;
+    margin-top: 60px;
 }
 
-.top1   {
-    border-right: 12px solid black;
-    border-bottom: 12px solid black;
-    background-color: white;
+.caption    {
+    width: 225px;
+    line-height: 1.3em;
+    background-image: linear-gradient(rgb(241, 241, 241), rgb(229, 229, 229));
+    color: rgb(21, 21, 21);
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 0px 2px 4px rgb(83, 83, 83);
+    font-size: .6rem;
+}
+
+/*Painting "Remade"*/
+
+.remade-frame  {
+    border-left: .5px solid #dbccb5;
+    border-top: .5px solid #dbccb5;
+    border-bottom: .5px solid #dbccb5;
+    border-radius: 0px 0px 3px 0px;
+    box-shadow: -3px 4px 5px rgba(83, 83, 83, 0.422);
+}
+
+.remade     {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.top-white-1   {
+    border-right: 14px solid #13211e;
+    border-bottom: 14px solid #13211e;
+    background-image: linear-gradient(#dbd6ce, #e5e4e0);
     width: 100px;
     height: 140px;
 }
 
-.top2   {
-    border-right: 12px solid black;
-    border-top: 12px solid black;
-    background-color: white;
+.top-white-2   {
+    border-right: 14px solid #13211e;
+    border-top: 14px solid #13211e;
+    background-image: linear-gradient(#e8e9e3, #e7e7e5);
     width: 100px;
     height: 160px;
 }
 
-.top3   {
-    width: 324px;
-    height: 324px;
-    background-color: #db2517;
+.top-red   {
+    width: 326px;
+    height: 327px;
+    background: rgb(255,91,87);
+    background: linear-gradient(203deg, #e13834 0%, rgba(212,38,28,1) 100%);
 }
 
 .top    {
     display: flex;
 }
 
-.bottomleft     {
-    border-right: 12px solid black;
-    border-top: 12px solid black;
-    background-color: #025c9d;
+.bottom-blue     {
+    border-right: 14px solid #13211e;
+    border-top: 14px solid #13211e;
+    background-color: #025b9e;
     width: 100px;
     height: 110px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.bottommiddle   {
-    border-right: 12px solid black;
-    border-top: 12px solid black;
-    background-color: white;
-    width: 270px;
-    height: 110px;
+.bottom-blue > p    {
+    font-size: .4rem;
+    margin-right: 4px;
+    font-weight: 500;
 }
 
-.bottomright1    {
-    border-top: 12px solid black;
-    border-bottom: 12px solid black;
-    background-color: white;
-    width: 42px;
-    height: 40px;
+.bottom-white   {
+    border-right: 14px solid;
+    border-top: 14px solid;
+    border-image: linear-gradient(250deg, #2f2928, #13211e 130%) 30;
+    background-color: #e0dfdb;
+    width: 278px;
+    height: 111px;
 }
 
-.bottomright2   {
-    border-top: 6px solid black;
-    background-color: #efdc66;
-    width: 42px;
-    height: 53px;
+.bottom-right-white-1   {
+    border-top: 14px solid #2f2928;
+    border-bottom: 14px solid #2f2928;
+    background-color: #e0dfdb;
+    width: 32px;
+    height: 45px;
+}
+
+.bottomright-yellow-1   {
+    border-top: 6px solid #2f2928;
+    background-color: #eedc6d;
+    width: 32px;
+    height: 47px;
+}
+
+.bottom-right-white-2   {
+    border-top: 14px solid #2f2928;
+    background-color: #e0dfdb;
+    width: 3px;
+    height: 55px;
+}
+
+.bottomright-yellow-2  {
+    background-color: #eedc6d;
+    width: 3px;
+    height: 56px;
 }
 
 .bottom     {
     display: flex;
 }
 
-.caption    {
-    line-height: 2.5em;
-    background-color: rgb(244, 244, 244);
-    color: rgb(21, 21, 21);
-    border-radius: 2px;
-    padding: 5px 15px 5px 15px;
-    box-shadow: 0px 2px 4px rgb(83, 83, 83);
+/*Original Painting*/
+.original   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.original > img  {
+    width: 450px;
+    box-shadow: -3px 4px 5px rgba(83, 83, 83, 0.422);
 }
