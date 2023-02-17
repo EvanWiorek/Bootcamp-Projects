@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+     
+    *   {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 100;
+}
+
+
+.main   {
+    display: flex;
+    margin: 0 auto;
+    width: 900px;
+    gap: 2rem;
+}
+
+
+.gray-header    {
+    background-color: #333333;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #cccccc;
+    padding: 10px;
+}
+
+.gray-header button  {
+    border: 0px;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: 5px 12px 4px 12px;
+    background-color: #cccccc;
+    color: #333333;
+    margin-right: 10px;
+}
+
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem; 
+}
+
+ .box    {
+    background-color: white;
+    border: 2px solid #cccccc;
+    font-size: 1.3rem;
+ }
+
+ .non-user-icon img   {
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+ }
+
+/* Navbar */
+.navbar-box a   {
+    color: white;
+    text-decoration: none;
+}
+.navbar-box    {
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.nav-links1     {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin-inline: auto;
+}
+
+.nav-links2  {
+    width: 500px;
+    display: flex;
+    align-items: center;    /* this centers the items vertically*/
+    justify-content: space-between;
+    list-style-type: none;
+}
+.btn    {
+    background-color: #17a2b8;
+    color: white;
+    padding: 5px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.active     {
+    font-weight: 700;
+}
+
+
+/* User Card */
+.blue-header {
+    background-color: #17a2b8;
+    height: 125px;
+    margin-bottom: 70px;
+}
+
+.cardbox-contents    {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+a   {
+    color: #085394;
+}
+.map-gear-icons  {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 1rem;
+}
+
+.user   {
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    padding: 3px;
+    width: 120px;
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+
+/* Education */
+.date{
+    color: #7e7e7e;
+}
+
+.ed-content     {
+    padding: 20px;
+    line-height: 2rem;
+}
+
+
+/* Connection Requests */
+.people-requests    {
+    padding: 15px;
+}
+.pr1    {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Your Connections */
+.people-connections    {
+    padding: 15px;
+}
+.pr2  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.more   {
+    border-top: 2px solid #cccccc;
+    padding: 5px;
+}
