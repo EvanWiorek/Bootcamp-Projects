@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+     
+    *   {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 100;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.flex-col   {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.between    {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.flex   {
+    display: flex;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+body    {
+    width: 800px;
+    margin: auto;
+}
+
+/*Navbar*/
+.navbar {
+    justify-content: space-between;
+    background-color: #9fc5f8;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.city-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.city-links h5  {
+    cursor: pointer;
+}
+
+/*Header*/
+.header {
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.line   {
+    height: 1.5px; 
+    background-color: black;
+    margin: 13px 0px;
+}
+
+
+/*Four-Day Forecast*/
+
+.high {
+    color: #d0312f;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.low    {
+    color: #2b78e4;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.box    {
+    background-color: #eeeeee;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.four-day-main   {
+    gap: 1.5rem;
+}
+
+.four-day-main img {
+    width: 140px;
+    border-radius: 50%;
+}
+
+
+/*Cookies Message*/
+.cookie-time    {
+    background-color: #eee;
+    border: 2px solid black;
+    padding: 10px;
+    width: 777px;
+    position: fixed;
+    bottom: 20px;
+}
+
+.accept {
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.accept button  {
+    background-color: #9fc5f8;
+    box-shadow: 3px 3px 0px black;
+    padding: 3px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cookie-time h3 {
+    font-weight: 900;
+}
+
+.cookie-time img     {
+    margin-left: 10px;
+}
