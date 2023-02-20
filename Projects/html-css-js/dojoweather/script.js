@@ -1,3 +1,64 @@
+function cookieRemove(div)  {
+    div.remove();
+    requests.innerText--;
+}
+
+function c2f(temp) {
+    return Math.round(9 / 5 * temp + 32);
+}
+
+function f2c(temp) {
+    return Math.round(5 / 9 * (temp - 32));
+}
+
+
+
+//Iterate through "#high" + i and "#low" + i
+function chooseTempLoop(element) {
+    alert("Now displaying temperatures in " + element.value);
+    for(var i=1; i<5; i++) {
+        var highSpan = document.querySelector("#high" + i);
+        var lowSpan = document.querySelector("#low" + i);
+        var highVal = parseInt(highSpan.innerText);
+        var lowVal = parseInt(lowSpan.innerText);
+        if(element.value == "°C") {
+            highSpan.innerText = f2c(highVal);
+            lowSpan.innerText = f2c(lowVal);
+        } else {
+            highSpan.innerText = c2f(highVal);
+            lowSpan.innerText = c2f(lowVal);
+        }
+    }
+}
+
+
+//queryselectall
+var highs = document.querySelectorAll(".high");
+var lows = document.querySelectorAll(".low");
+
+function chooseTempAll(element) {
+    alert("Now displaying temperatures in " + element.value);
+    if(element.value == "°F")   {
+        for(var i=0; i<highs.length; i++)   {
+            highs[i].innerText = c2f(highs[i].innerText);
+        }
+        for(var i=0; i<lows.length; i++)   {
+            lows[i].innerText = c2f(lows[i].innerText);
+        }
+    }
+    if(element.value == "°C")   {
+        for(var i=0; i<highs.length; i++)   {
+            highs[i].innerText = f2c(highs[i].innerText);
+        }
+        for(var i=0; i<lows.length; i++)   {
+            lows[i].innerText = f2c(lows[i].innerText);
+        }
+    }
+}
+
+
+
+//long winded function
 var highTemp1 = document.querySelector("#high1")
 var highTemp2 = document.querySelector("#high2")
 var highTemp3 = document.querySelector("#high3")
@@ -28,58 +89,5 @@ function chooseTemp(element)    {
     lowTemp2.innerText = Math.round((lowTemp2.innerText - 32) * 5 / 9);
     lowTemp3.innerText = Math.round((lowTemp3.innerText - 32) * 5 / 9);
     lowTemp4.innerText = Math.round((lowTemp4.innerText - 32) * 5 / 9);
-    }
-}
-
-function cookieRemove(div)  {
-    div.remove();
-    requests.innerText--;
-}
-
-
-//querySelector only selects the first element, not selecing all
-//querySelectorAll wasn't selecting any, tried span.high, .high, and #high
-
-
-
-//with for loop
-// function chooseTempLoop(element) {
-//     alert("Now displaying temperatures in " + element.value);
-//     for(var i=1; i<5; i++) {
-//         var highSpan = document.querySelector("#high" + i);
-//         var lowSpan = document.querySelector("#low" + i);
-//         if(element.value == "°C") {
-//             highSpan.innerText = Math.round((highSpan.innerText - 32) * 5 / 9);
-//             lowSpan.innerText = Math.round((lowSpan.innerText - 32) * 5 / 9);
-//         } else {
-//             highSpan.innerText = Math.round(highSpan.innerText * 9 / 5 + 32);
-//             lowSpan.innerText = Math.round(lowSpan.innerText * 9 / 5 + 32);
-//         }
-//     }
-// }
-
-//simplified further implementing official solution
-function c2f(temp) {
-    return Math.round(9 / 5 * temp + 32);
-}
-
-function f2c(temp) {
-    return Math.round(5 / 9 * (temp - 32));
-}
-
-function chooseTempLoop(element) {
-    alert("Now displaying temperatures in " + element.value);
-    for(var i=1; i<5; i++) {
-        var highSpan = document.querySelector("#high" + i);
-        var lowSpan = document.querySelector("#low" + i);
-        var highVal = parseInt(highSpan.innerText);
-        var lowVal = parseInt(lowSpan.innerText);
-        if(element.value == "°C") {
-            highSpan.innerText = f2c(highVal);
-            lowSpan.innerText = f2c(lowVal);
-        } else {
-            highSpan.innerText = c2f(highVal);
-            lowSpan.innerText = c2f(lowVal);
-        }
     }
 }
