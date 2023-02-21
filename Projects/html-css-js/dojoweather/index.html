@@ -8,93 +8,100 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar flex">
-        <div class="site-title flex-1">
-            <h1>DojoWeather</h1>
-        </div>
-        <div class="city-links flex-1">
-            <h5 onclick="alert('Loading weather report...')">Burbank</h5>
-            <h5 onclick="alert('Loading weather report...')">Chicago</h5>
-            <h5 onclick="alert('Loading weather report...')">Dallas</h5>
-        </div>
-    </nav>
 
-    <div class="header flex">
-        <div class="current-city">
-            <h1>San Jose</h1>
+    <div class="main">
+
+        <!--Navigation bar-->
+        <nav class="navbar flex">
+            <div class="site-title flex-1">
+                <h1>DojoWeather</h1>
+            </div>
+            <div class="city-links flex-1">
+                <h5 onclick="alert('Loading weather report...')">Burbank</h5>
+                <h5 onclick="alert('Loading weather report...')">Chicago</h5>
+                <h5 onclick="alert('Loading weather report...')">Dallas</h5>
+            </div>
+        </nav>
+
+        <!--Header and Line-->
+        <div class="header flex">
+            <div class="current-city">
+                <h1>San Jose</h1>
+            </div>
+            <div class="temperature">
+                <label>show temperature in </label>
+                <select onchange="chooseTempAll(this)">
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
         </div>
-        <div class="temperature">
-            <label>show temperature in </label>
-            <select onchange="chooseTempAll(this)">
-                <option>°C</option>
-                <option>°F</option>
-            </select>
+        <div class="line"></div>
+
+        <!--Four Day Forecast-->
+        <div class="four-day-main flex">
+            <div class="today box flex-1 flex-col">
+                <div class="today-top flex-1 center">
+                    <h2>Today</h2>
+                    <img src="./assets/some_rain.png" alt="Rain">
+                    <p>some rain</p>
+                </div>
+                <div class="today-bottom around">
+                    <h3 class="hdegree"><span class="high" id="high1">24</span>°</h3>
+                    <h3 class="ldegree"><span class="low" id="low1">18</span>°</h3>
+                </div>
+            </div>
+            <div class="tomorrow box flex-1 flex-col">
+                <div class="tomorrow-top flex-1 center">
+                    <h2>Tomorrow</h2>
+                    <img src="./assets/some_sun.png" alt="Sun">
+                    <p>some sun</p>
+                </div>
+                <div class="tomorrow-bottom around">
+                    <h3 class="hdegree"><span class="high" id="high2">27</span>°</h3>
+                    <h3 class="ldegree"><span class="low" id="low2">19</span>°</h3>
+                </div>
+            </div>
+            <div class="friday box flex-1 flex-col">
+                <div class="friday-top flex-1 center">
+                    <h2>Friday</h2>
+                    <img src="./assets/some_clouds.png" alt="Clouds">
+                    <p>some clouds</p>
+                </div>
+                <div class="friday-bottom around">
+                    <h3 class="hdegree"><span class="high" id="high3">21</span>°</h3>
+                    <h3 class="ldegree"><span class="low" id="low3">16</span>°</h3>
+                </div>
+            </div>
+            <div class="saturday box flex-1 flex-col">
+                <div class="saturday-top flex-1 center">
+                    <h2>Saturday</h2>
+                    <img src="./assets/some_sun.png" alt="Sun">
+                    <p>some sun</p>
+                </div>
+                <div class="saturday-bottom around">
+                    <h3 class="hdegree"><span class="high" id="high4">26</span>°</h3>
+                    <h3 class="ldegree"><span class="low" id="low4">21</span>°</h3>
+                </div>
+            </div>
         </div>
+
+        <!--Cookies Footer-->
+        <div class="cookie-time flex" id="cookies">
+            <div class="flex-1">
+                <img src="./assets/cookie.png" alt="Cookie">
+            </div>
+            <div class="cookie-text flex-4">
+                <h3 id="stop">Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize conent and ads, to provice social media features and to analyze or traffic. <a href="#">Read more...</a></p>
+            </div>
+            <div class="accept flex flex-2">
+                <button onclick="cookieRemove(cookies)">I Accept</button>
+            </div>
+        </div>
+        
     </div>
-    <div class="line"></div>
-
-    <div class="four-day-main flex">
-        <div class="today box flex-1 flex-col">
-            <div class="today-top flex-1 center">
-                <h2>Today</h2>
-                <img src="./assets/some_rain.png" alt="Rain">
-                <p>some rain</p>
-            </div>
-            <div class="today-bottom between">
-                <h3 class="hdegree"><span class="high" id="high1">24</span>°</h3>
-                <h3 class="ldegree"><span class="low" id="low1">18</span>°</h3>
-            </div>
-        </div>
-        <div class="tomorrow box flex-1 flex-col">
-            <div class="tomorrow-top flex-1 center">
-                <h2>Tomorrow</h2>
-                <img src="./assets/some_sun.png" alt="Sun">
-                <p>some sun</p>
-            </div>
-            <div class="tomorrow-bottom between">
-                <h3 class="hdegree"><span class="high" id="high2">27</span>°</h3>
-                <h3 class="ldegree"><span class="low" id="low2">19</span>°</h3>
-            </div>
-        </div>
-        <div class="friday box flex-1 flex-col">
-            <div class="friday-top flex-1 center">
-                <h2>Friday</h2>
-                <img src="./assets/some_clouds.png" alt="Clouds">
-                <p>some clouds</p>
-            </div>
-            <div class="friday-bottom between">
-                <h3 class="hdegree"><span class="high" id="high3">21</span>°</h3>
-                <h3 class="ldegree"><span class="low" id="low3">16</span>°</h3>
-            </div>
-        </div>
-        <div class="saturday box flex-1 flex-col">
-            <div class="saturday-top flex-1 center">
-                <h2>Saturday</h2>
-                <img src="./assets/some_sun.png" alt="Sun">
-                <p>some sun</p>
-            </div>
-            <div class="saturday-bottom between">
-                <h3 class="hdegree"><span class="high" id="high4">26</span>°</h3>
-                <h3 class="ldegree"><span class="low" id="low4">21</span>°</h3>
-            </div>
-        </div>
-    </div>
-
-    <div class="cookie-time flex" id="cookies">
-        <div class="flex-1">
-            <img src="./assets/cookie.png" alt="Cookie">
-        </div>
-        <div class="cookie-text flex-4">
-            <h3 id="stop">Stop! Cookie time</h3>
-            <p>We use cookies (sadly not the edible ones) to personalize conent and ads, to provice social media features and to analyze or traffic. <a href="#">Read more...</a></p>
-        </div>
-        <div class="accept flex flex-2">
-            <button onclick="cookieRemove(cookies)">I Accept</button>
-        </div>
-    </div>
-
-
-
+    
 
 <script src="script.js"></script>
 </body>
