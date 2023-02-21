@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeIt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!--Navbar-->
+    <nav class="navbar flex between">
+        <div class="nav-left flex">
+            <img src="./icons/cat.png" alt="CodeIt Logo" width="30">
+            <h3>CodeIt</h3>
+            <div>
+                <input type="text" placeholder="search" class="search">
+                <button class="go" onclick="searchGo()">Go</button>
+            </div>
+
+        </div>
+        <div class="nav-right">
+            <button class="get-app">Get App</button>
+            <button class="login">Log In</button>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <div class="white-bg">
+        <div class="header">
+            <div class="header-top flex align-center">
+                <img src="./icons/cat.png" alt="CodeIt Logo" width="60">
+                <h1>c/Dojo</h1>
+                <button class="join" onclick="elementRemove(this)">Join</button>
+            </div>
+            <div class="header-bottom flex">
+                <a href="#" id="active">Posts</a>
+                <a href="#">Wiki</a>
+                <a href="#">c/Dojo</a>
+                <a href="#">Discord</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Container for everything under header-->
+    <div class="main">
+
+        <div class="gray-body flex gap">
+
+            <!--CodeIt Posts-->
+            <div class="cards flex flex-3 flex-col gap">
+
+                <!--First post-->
+                <div class="card flex gap">
+                    <div class="votes">
+                        <img src="./icons/up-arrow.png" alt="upvote" width="20" class="vote-arrow"
+                            onclick="upvote(post1)">
+                        <p id="post1">29</p>
+                        <img src="./icons/down-arrow.png" alt="downvote" width="20" class="vote-arrow"
+                            onclick="downvote(post1)">
+                    </div>
+                    <div class="card-body  flex flex-col gap">
+                        <h2>Best of Project Week 2022!</h2>
+                        <img src="./icons/placeholder.png" alt="Placeholder" width="330">
+                        <div class="card-body-bottom flex gap">
+                            <div class="comments flex align-center gap">
+                                <a href="#"><img src="./icons/comments.png" alt="Comments" width="30"></a>
+                                <a href="#">42 Comments</a>
+                            </div>
+                            <div class="share flex align-center gap">
+                                <a href="#"><img src="./icons/share.png" alt="Share" width="20"></a>
+                                <a href="#">Share</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Second post-->
+                <div class="card flex gap">
+                    <div class="votes">
+                        <img src="./icons/up-arrow.png" alt="upvote" width="20" class="vote-arrow"
+                            onclick="upvote(post2)">
+                        <p id="post2">17</p>
+                        <img src="./icons/down-arrow.png" alt="downvote" width="20" class="vote-arrow"
+                            onclick="downvote(post2)">
+                    </div>
+                    <div class="card-body flex flex-col gap">
+                        <h2>Best of Project Week 2022!</h2>
+                        <img src="./icons/placeholder.png" alt="Placeholder" width="330">
+                        <div class="card-body-bottom flex gap">
+                            <div class="comments flex align-center gap">
+                                <a href="#"><img src="./icons/comments.png" alt="Comments" width="30"></a>
+                                <a href="#">16 Comments</a>
+                            </div>
+                            <div class="share flex align-center gap">
+                                <a href="#"><img src="./icons/share.png" alt="Share" width="20"></a>
+                                <a href="#">Share</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Right side of the page-->
+            <div class="right-boxes flex-2 flex flex-col gap">
+
+                <!--About the Dojo-->
+                <div class="right-box about">
+                    <h3 class="right-box-title">About the Dojo</h3>
+                    <div class="right-box-body">
+                        <p>Changing Lives with Code and a dedicated community of debuggers!</p>
+                    </div>
+                </div>
+
+                <!--Discord-->
+                <div class="right-box discord">
+                    <h3 class="right-box-title">Discord</h3>
+                    <div class="right-box-body-discord flex flex-col align-center">
+                        <button class="discord-btn">discord.gg/cdojo</button>
+                    </div>
+                </div>
+
+                <!--Dojo Rules-->
+                <div class="rules">
+                    <h3 class="right-box-title">c/Dojo Rules</h3>
+                    <div class="right-box-body flex flex-col align-center">
+                        <ol>
+                            <li>Follow the 20 Minute Rule!</li>
+                            <li>Don't compare yourself to others!</li>
+                            <li>Learn Actively</li>
+                            <li>Don't Chase Best Practices (Yet)</li>
+                            <li>When you're behind, ask for help!</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Attributions-->
+    <div class="sources flex flex-col align-center">
+        <p>links to icons used that weren't included:</p>
+        <ul>
+            <li><a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik -
+                    Flaticon</a></li>
+            <li><a href="https://www.flaticon.com/free-icons/speech-bubble" title="speech bubble icons">Speech bubble
+                    icons created by Freepik - Flaticon</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
