@@ -93,7 +93,19 @@ body    {
     font-size: 1.3rem;
 }
 
+.hdegree {
+    color: #d0312f;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
 .low    {
+    color: #2b78e4;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.ldegree {
     color: #2b78e4;
     font-weight: 600;
     font-size: 1.3rem;
