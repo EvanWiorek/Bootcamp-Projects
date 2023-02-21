@@ -4,7 +4,7 @@
 
 <p align="center"><img src="./Projects/css-html/piet-mondrian/piet3.png" alt="piet3.png" width=700px></p>
 <p align="center"><a href="https://github.com/EvanWiorek/Bootcamp-Projects/tree/main/Projects/css-html/piet-mondrian">Piet Mondrian</a></p>
-
-<p align="center"><img src="./Projects/css-html-js/code-it/CodeIt.png" alt="CodeIt" width=700px></p>
-<p align="center"><a href="https://github.com/EvanWiorek/Bootcamp-Projects/tree/main/Projects/html-css-js/code-it">CodeIt</a></p>
+&nbsp;
+<p align="center"><img src="./Projects/html-css-js/code-it/CodeIt.PNG" alt="CodeIt" width=700px></p>
+<p align="center"><a href="https://github.com/EvanWiorek/Bootcamp-Projects/tree/main/Projects/html-css-js/code-it">Code-It</a></p>
 
