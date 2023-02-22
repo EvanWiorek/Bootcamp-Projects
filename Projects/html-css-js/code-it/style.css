@@ -32,6 +32,14 @@
     flex: 4;
 }
 
+.flex-5 {
+    flex: 5;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
 .flex-start {
     justify-content: flex-start;
 }
