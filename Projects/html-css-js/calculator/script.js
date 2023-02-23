@@ -1,12 +1,17 @@
 var displayDiv = document.querySelector("#display");
 var num1 = "";
 var num2 = "";
-var op = "";
-
 
 function press(num) {
-    num1 += num;    //this allows manipulating multiple digits. If it was =, only one could display when clicked.
-    display.innerHTML = num1+".";
+    var numString = num1.toString()
+    if (numString.length < 9) {
+        num1 += num;
+        var numString = Array.from(String(num1));
+        if (numString.includes(".")) {
+            display.innerHTML = num1;
+        }
+        else display.innerHTML = num1 + ".";
+    }
 }
 
 function operatorSelect(key) {
@@ -66,7 +71,6 @@ function calculate() {
     }
     num1 = res;
     operatorKey = "";
-    console.log(res)
     if (res % 1 != 0) {
         if (res > 99999999) {
             display.innerHTML = "too long!"
@@ -75,6 +79,11 @@ function calculate() {
     }
     if (res > 99999999) {
         display.innerHTML = "too long!"
+    }
+    var resString = Array.from(String(res));
+    console.log(resString);
+    if (resString.includes(".")) {
+        display.innerHTML = res;
     }
     else display.innerHTML = res + ".";
 }

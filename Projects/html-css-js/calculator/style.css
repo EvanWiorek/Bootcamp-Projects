@@ -44,6 +44,7 @@ body {
 /*Calculator Screen*/
 #display    {
     font-family: "segment7-4gml-webfont";
+    width: 263px;
     text-align: right;
     background-color: #bcc9bc;
     margin: 20px 30px;
@@ -52,6 +53,9 @@ body {
     border-radius: 3px;
     border-top: 1px solid #4f5452;
     border-left: 1px solid #4f5452;
+    /* white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; */
 }
 
 .calculator-top {
