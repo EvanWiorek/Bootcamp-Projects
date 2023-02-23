@@ -76,17 +76,18 @@ function flatten(arr2d) {
 
 
 
-//given a nested array, remove the inner arrays and rewrite to displa
+//using .shift
 function flatten(arr2d) {
+    var numOfArrays = arr2d.length;
     for (var i = 0; i < arr2d.length; i++) {
         for (var x = 0; x < arr2d[i].length; x++) {
             arr2d.push(arr2d[i][x]);
         }
     }
+    for (var i = 0; i < numOfArrays; i++) {
+        arr2d.shift();
+    }
     return arr2d;
 }
 
-
-
-
-console.log(flatten([[2, 5, 8], [3, 6, 1], [5, 7, 7]]));
+console.log(flatten([[2, 5, 8], [3, 6, 1], [5, 7, 7], [1, 2, 3, 4],[10000, 10202]]));
