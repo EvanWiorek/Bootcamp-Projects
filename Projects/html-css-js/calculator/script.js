@@ -27,34 +27,8 @@ function clr() {
     display.innerHTML = "0.";
 }
 
-
-//original way
-// function calculate() {
-//     var a = num2;
-//     var b = num1;
-//     var res = 0;
-//     switch (op) {
-//         case "+":
-//             res = a + b;
-//             break;
-//         case "-":
-//             res = a - b;
-//             break;
-//         case "*":
-//             res = a * b;
-//             break;
-//         case "/":
-//             res = a / b;
-//             break;
-//     }
-//     num1 = res;
-//     op = "";
-//     display.innerHTML = res + ".";
-// }
-
-
 function calculate() {
-    var a = parseFloat(num2); //parseInt turns strings of just numbers into whole numbers; parseFloat turns them into numbers with decimals!
+    var a = parseFloat(num2);
     var b = parseFloat(num1);
     var res = 0;
     if (operatorKey == "+") {
@@ -93,9 +67,6 @@ function calculate() {
         else display.innerHTML = res;
     }
 }
-
-
-
 
 
 //The coding below provided by: https://www.w3schools.com/howto/howto_js_draggable.asp
@@ -141,3 +112,27 @@ function dragElement(elmnt) {
         document.onmousemove = null;
     }
 }
+
+//using switch
+// function calculate() {
+//     var a = num2;
+//     var b = num1;
+//     var res = 0;
+//     switch (op) {
+//         case "+":
+//             res = a + b;
+//             break;
+//         case "-":
+//             res = a - b;
+//             break;
+//         case "*":
+//             res = a * b;
+//             break;
+//         case "/":
+//             res = a / b;
+//             break;
+//     }
+//     num1 = res;
+//     op = "";
+//     display.innerHTML = res + ".";
+// }
