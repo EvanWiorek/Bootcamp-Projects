@@ -36,12 +36,12 @@ body {
     border: 8px solid #858585;
     border-radius: 10px;
     position: absolute;
-    top: 200px;
-    left: 600px;
+    top: 235px;
+    left: 585px;
     box-shadow: 5px -5px 20px -3px rgb(0, 0, 0, .3);
 }
 
-/*Calculator Screen*/
+/*Calculator Head (logo and display screen)*/
 #display    {
     font-family: "segment7-4gml-webfont";
     width: 263px;
@@ -53,9 +53,6 @@ body {
     border-radius: 3px;
     border-top: 1px solid #4f5452;
     border-left: 1px solid #4f5452;
-    /* white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden; */
 }
 
 .calculator-top {
