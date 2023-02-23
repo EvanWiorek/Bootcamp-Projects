@@ -71,19 +71,17 @@ function calculate() {
     }
     num1 = res;
     operatorKey = "";
-    if (res % 1 != 0) {
-        if (res > 99999999) {
+    var resString = Array.from(String(res));
+    console.log(resString);
+    if (resString.includes(".")) {
+        if (resString.length > 9) {
             display.innerHTML = "too long!"
         }
         else display.innerHTML = res;
     }
-    if (res > 99999999) {
+    if (resString.length > 9) {
         display.innerHTML = "too long!"
     }
-    var resString = Array.from(String(res));
-    console.log(resString);
-    if (resString.includes(".")) {
-        display.innerHTML = res;
-    }
     else display.innerHTML = res + ".";
+
 }
