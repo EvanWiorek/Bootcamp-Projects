@@ -42,7 +42,7 @@ body {
 }
 
 .main   {
-    background-color: #e5e5e5;
+        background-image: linear-gradient(250deg, #dddddd, #ebeaea);
     width: 330px;
     margin: auto;
     border: 8px solid #858585;
