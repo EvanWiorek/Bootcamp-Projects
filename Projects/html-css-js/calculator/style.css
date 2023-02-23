@@ -73,6 +73,7 @@ body {
     height: .5rem;
     width: 333px;
     background-color: #858585;
+    border-bottom: 1.6px solid #626262;
 }
 
 .buttons-body {
