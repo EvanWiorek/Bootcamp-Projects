@@ -15,7 +15,7 @@
             
             <div class="calculator-top">
                 <img src="calc-top.jpg" alt="cal-top" width="300">
-                <div id="display">0</div>
+                <div id="display">0.</div>
                 <div class="gray-line"></div>
             </div>
 
@@ -24,25 +24,25 @@
                     <button class="num-button" onclick="press(7);">7</button>
                     <button class="num-button" onclick="press(8);">8</button>
                     <button class="num-button" onclick="press(9);">9</button>
-                    <button class="operator" onclick="setOP('/');">÷</button>
+                    <button class="operator" onclick="operatorSelect('/');">÷</button>
                   </div>
                   <div class="row">
                     <button class="num-button" onclick="press(4);">4</button>
                     <button class="num-button" onclick="press(5);">5</button>
                     <button class="num-button" onclick="press(6);">6</button>
-                    <button class="operator" onclick="setOP('*');">×</button>
+                    <button class="operator" onclick="operatorSelect('*');">×</button>
                   </div>
                   <div class="row">
                     <button class="num-button" onclick="press(1);">1</button>
                     <button class="num-button" onclick="press(2);">2</button>
                     <button class="num-button" onclick="press(3);">3</button>
-                    <button class="operator" onclick="setOP('-');">−</button>
+                    <button class="operator" onclick="operatorSelect('-');">−</button>
                   </div>
                   <div class="row">
                     <button class="clear" onclick="clr();">C</button>
                     <button class="num-button" onclick="press(0);">0</button>
                     <button class="decimal" onclick="press('.');">.</button>
-                    <button class="operator" onclick="setOP('+');">+</button>
+                    <button class="operator" onclick="operatorSelect('+');">+</button>
                   </div>
                   <div class="row">
                     <button class="equals" id="equals" onclick="calculate()">=</button>

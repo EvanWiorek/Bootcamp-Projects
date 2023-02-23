@@ -1,0 +1,80 @@
+var displayDiv = document.querySelector("#display");
+var num1 = "";
+var num2 = "";
+var op = "";
+
+
+function press(num) {
+    num1 += num;    //this allows manipulating multiple digits. If it was =, only one could display when clicked.
+    display.innerHTML = num1+".";
+}
+
+function operatorSelect(key) {
+    operatorKey = key;
+    num2 = num1;
+    num1 = "";
+}
+
+function clr() {
+    num1 = "";
+    num2 = "";
+    operatorKey = "";
+    display.innerHTML = "0.";
+}
+
+
+//original way
+// function calculate() {
+//     var a = num2;
+//     var b = num1;
+//     var res = 0;
+//     switch (op) {
+//         case "+":
+//             res = a + b;
+//             break;
+//         case "-":
+//             res = a - b;
+//             break;
+//         case "*":
+//             res = a * b;
+//             break;
+//         case "/":
+//             res = a / b;
+//             break;
+//     }
+//     num1 = res;
+//     op = "";
+//     display.innerHTML = res + ".";
+// }
+
+
+function calculate() {
+    var a = parseFloat(num2); //parseInt turns strings of just numbers into whole numbers; parseFloat turns them into numbers with decimals!
+    var b = parseFloat(num1);
+    var res = 0;
+    if (operatorKey == "+") {
+        res = a + b;
+    }
+    else if (operatorKey == "-") {
+        res = a - b;
+    }
+    else if (operatorKey == "*") {
+        res = a * b;
+    }
+    else if (operatorKey == "/") {
+        res = a / b;
+    }
+    num1 = res;
+    operatorKey = "";
+    console.log(res)
+    if (res % 1 != 0) {
+        if (res > 99999999) {
+            display.innerHTML = "too long!"
+        }
+        else display.innerHTML = res;
+    }
+    if (res > 99999999) {
+        display.innerHTML = "too long!"
+    }
+    else display.innerHTML = res + ".";
+}
