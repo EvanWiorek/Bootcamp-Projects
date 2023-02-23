@@ -72,16 +72,24 @@ function calculate() {
     num1 = res;
     operatorKey = "";
     var resString = Array.from(String(res));
+    var numLeftDecimal = Math.trunc(res);
+    var spaceLeft = Array.from(String(numLeftDecimal)).length;
+    if (resString.includes(".")==false) {
+        if (spaceLeft > 9)  {
+            display.innerHTML = "Too long!"
+        }
+        else display.innerHTML = res + ".";
+    }
+    var truncNum = Number(res.toFixed((9-spaceLeft)));
     console.log(resString);
+    console.log(spaceLeft);
     if (resString.includes(".")) {
         if (resString.length > 9) {
-            display.innerHTML = "too long!"
+            display.innerHTML = truncNum;
+        }
+        else if(resString.length > 9 && spaceLeft > 9)  {
+            display.innerHTML = "Too long!"
         }
         else display.innerHTML = res;
     }
-    if (resString.length > 9) {
-        display.innerHTML = "too long!"
-    }
-    else display.innerHTML = res + ".";
-
 }
