@@ -3,7 +3,7 @@
 <h2 align="center"> Projects I've made during my time at Coding Dojo:<h2>
 <div> <!--calculator-->
 <p align="center"><img src="https://user-images.githubusercontent.com/124269000/221036731-0e3d3fb2-fc2b-4711-8b50-f21208890f40.png" width=700px></p>
-<h3 align="center">Styled after the Casio MS-80B, this is a working 4 function, draggable calculator. Try it out on the website!</h3>
+<h4 align="center">Styled after the Casio MS-80B, this is a working 4 function, draggable calculator. Try it out on the website!</h4>
 <div align="center">
 <h2><a href="https://evanwiorek.github.io/JavaScript-Calculator/">Website</a>&nbsp;|&nbsp;<a href="https://github.com/EvanWiorek/JavaScript-Calculator">Repo</a></h2>
 </div>
