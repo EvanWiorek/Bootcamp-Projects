@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="main-1">
+        
+        <div class="top">
+            <h2>Counter</h2>
+            <h3>This page has been visited {{ count }} time(s)</h3>
+            <h3>You have added {{ man_count }} to the counter.</h3>
+        </div>
+        
+        <div class="bottom">
+            
+            <form action="/add-to-count-1">
+                <button class="add-1">Add 1</button>
+            </form>
+
+            <form action="/add-to-count-2">
+                <button class="add-2">Add 2</button>
+            </form>
+    
+            <form action="/destroy_session">
+                <button class="reset">Reset</button>
+            </form>
+
+        </div>
+
+        <div class="bottom-2">
+            <form action="/manual_add" method="POST">
+                <label for="number">Manually add to the counter:</label>
+                <input type='text' name='number' class="text-line">
+                <input type='submit' value='Go!' class="manual">
+            </form>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
