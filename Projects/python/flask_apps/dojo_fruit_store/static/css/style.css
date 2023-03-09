@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.apple {
+    transition: 300ms;
+    z-index: 1;
+    top: -270px;
+    position: relative;
+}
+
+
+.raspberry {
+    transition: 300ms;
+    z-index: 1;
+    top: -200px;
+    position: relative;
+}
+
+.strawberry {
+    transition: 300ms;
+    z-index: 1;
+    top: -240px;
+    position: relative;
+}
+
+.bg img {
+    border: 0px;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.dojo-fruits-container {
+    min-height: 500px;
+}
+
+.go-back-button {
+    position: relative;
+    top: -230px;
+}
+
+.buy-container {
+    margin: -150px;
+}
