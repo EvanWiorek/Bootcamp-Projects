@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show User</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<style>
+    .user-box {
+        border: 1px solid rgb(186, 186, 186);
+    }
+
+    .user-box h5 {
+        line-height: 4rem;
+        padding-left: 20px;
+    }
+
+    span {
+        font-weight: 400;
+    }
+</style>
+
+<body>
+
+    <div class="main-container m-auto mt-5 d-flex justify-content-center col-9 gap-5">
+        <div class="col-5">
+            <h1 class="mb-3">User {{ one_user.id }} </h1>
+            <div class="user-box mb-5 shadow-sm">
+                <h5>Full Name: <span>{{ one_user.first_name }} {{ one_user.last_name }}</span></h5>
+                <hr/>
+                <h5>Email: <span>{{ one_user.email }}</span></h5>
+                <hr/>
+                <h5>Created On: <span>{{ one_user.created_at }}</span></h5>
+                <hr/>
+                <h5>Last Updated On: <span>{{ one_user.updated_at }}</span></h5>
+            </div>
+            <a href="/users/{{ one_user.id }}/update_page">Edit</a> | <a href="/users/{{ one_user.id }}/delete">Delete</a>
+        </div>
+        <a class="col-1 mt-5" href="/">Home</a>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
