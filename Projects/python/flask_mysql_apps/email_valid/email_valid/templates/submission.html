@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<style>
+    body {
+        background-color: #00526b;
+    }
+
+    .body-submission {
+        margin-top: 20px;
+        background-color: #51a6c0;
+        padding: 30px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+    }
+
+    .success {
+        margin-top: 20px;
+        background-color: #00ba38;
+        padding: 30px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+        <div class="success col-7 m-auto mt-3 text-center shadow text-light">
+            <h2>Success! The email address you entered ( ) is a VALID email address! Thank you!</h2>
+        </div>
+        <div class="body-submission col-5 m-auto mt-5 shadow text-light">
+            <h3><u>Email Addresses Entered:</u></h3>
+
+            {% for email in all_emails%}
+            <p>{{email.email}} {{email.created_at}}</p>
+            {% endfor %}
+            <hr/>
+            <a href="/" class="btn btn-light">Another!</a>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
