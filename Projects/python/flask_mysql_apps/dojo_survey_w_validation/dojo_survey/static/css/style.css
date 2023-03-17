@@ -1,0 +1,15 @@
+.body-survey {
+    margin-top: 20px;
+    background-color: #33393e;
+    padding: 30px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.body-submission {
+    margin-top: 20px;
+    background-color: #393939;
+    padding: 30px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
