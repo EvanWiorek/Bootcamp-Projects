@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Github</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+</head>
+
+<style>
+    #coder-info {
+        background-color: black;
+        padding: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="form-group m-1 col-3">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" class="form-control">
+    </div>
+    <button class="btn btn-primary m-1" id="git-button">Click to Git User</button>
+    <br>
+    <div id="coder-info-container"></div>
+
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN'
+        crossorigin='anonymous'></script>
+    <script>
+        const gitButton = document.getElementById("git-button");
+        let coderInfoDiv = document.getElementById("coder-info-container")
+
+        gitButton.addEventListener("click", async (event) => {
+            let username = document.getElementById("username").value;
+            let url = `https://api.github.com/users/${username}`;
+            let response = await fetch(url)
+            let coderData = await response.json();
+            console.log(coderData);
+            coderInfoDiv.innerHTML += `
+            <div id="coder-info" class="mb-2 rounded col-4 m-1 text-center">
+                <h3 class="text-light">${coderData.name} | ${coderData.login}</h3>
+                <img src="${coderData.avatar_url}" alt="Profile Picture" width="300px" class="rounded">
+            </div>
+            `
+            return CoderData;
+        })
+    </script>
+</body>
+
+</html>
