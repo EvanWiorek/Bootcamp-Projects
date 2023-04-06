@@ -1,9 +1,9 @@
 import "./App.css";
 
-const TodoDisplay = (props) => {
-  const { todosArr, setTodosArr } = props
+export default (props) => {
+  const { todosArr, setTodosArr } = props;
 
-    const handleDelete = (e, deleteIdx) => {
+  const handleDelete = (e, deleteIdx) => {
     e.preventDefault();
     const deletedTodos = todosArr.filter((todoItem, todosArrIdx) => {
       return todosArrIdx !== deleteIdx;
@@ -16,7 +16,7 @@ const TodoDisplay = (props) => {
     const completedTodos = todosArr.map((todo, mapIdx) => {
       if (checkedIdx === mapIdx) {
         //below creates and replaces a todo item, instead of modifying the current state
-        const completedTodo = {...todo, complete: !todo.complete};
+        const completedTodo = { ...todo, complete: !todo.complete };
         return completedTodo;
       }
       //else return todo as is, if complete is not modified
@@ -37,7 +37,7 @@ const TodoDisplay = (props) => {
         }
 
         return (
-          <div className="d-flex mt-3 align-items-center gap-3 col-10">
+          <div className="d-flex mt-3 align-items-center gap-3">
             <input
               onChange={(e) => {
                 handleToggleComplete(idx);
@@ -64,4 +64,4 @@ const TodoDisplay = (props) => {
   );
 };
 
-export default TodoDisplay;
+// export default TodoDisplay;

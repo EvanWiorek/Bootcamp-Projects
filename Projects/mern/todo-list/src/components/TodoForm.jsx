@@ -1,6 +1,6 @@
 import "./App.css";
 
-const TodoForm = (props) => {
+export default (props) => {
   const { setTodosArr, setNewTodo, todoItem, newTodo, todosArr } = props;
 
   const handleSubmit = (e) => {
@@ -14,8 +14,8 @@ const TodoForm = (props) => {
 
   return (
     <form
-    className="d-flex align-items-center gap-2 col-10 m-auto justify-content-around"  
-    onSubmit={(e) => {
+      className="d-flex align-items-center gap-2 col-10 m-auto justify-content-around"
+      onSubmit={(e) => {
         handleSubmit(e);
       }}
     >
@@ -33,5 +33,3 @@ const TodoForm = (props) => {
     </form>
   );
 };
-
-export default TodoForm;
