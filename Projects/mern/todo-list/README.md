@@ -1,1 +1,1 @@
-<img src="./screenshot.png">
+<img src="./Bootcamp-projects/Projects/mer/screenshot.png">
