@@ -4,7 +4,7 @@ export default (props) => {
   const { pokemonArr, setPokemonArr } = props;
   
   const fetchPokemon = () => {
-    fetch("https://pokeapi.co/api/v2/pokemon")
+    fetch("https://pokeapi.co/api/v2/pokemon?limit=807")
       .then((response) => {
         // not the actual JSON response body but the entire HTTP response
         // console.log("1");
