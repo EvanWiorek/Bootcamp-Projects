@@ -14,6 +14,7 @@ function App() {
   const [SWAPIObject, setSWAPIObject] = useState({});
   const [isClicked, setIsClicked] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [searchIdBlank, setSearchIdBlank] = useState("");
   const [homeWorld, setHomeWorld] = useState({});
   const [planetNumber, setPlanetNumber] = useState("");
   const [searchTerms, setSearchTerms] = useState({
@@ -32,6 +33,8 @@ function App() {
         setHomeWorld={setHomeWorld}
         isSubmitted={isSubmitted}
         setIsSubmitted={setIsSubmitted}
+        setSearchIdBlank={setSearchIdBlank}
+        searchIdBlank={searchIdBlank}
       />
       <Routes>
         <Route

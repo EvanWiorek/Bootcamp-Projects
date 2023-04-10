@@ -9,7 +9,9 @@ export default ({
   setHomeWorld,
   setPlanetNumber,
   isSubmitted,
-  setIsSubmitted
+  setIsSubmitted,
+  searchIdBlank,
+  setSearchIdBlank,
 }) => {
   const navigate = useNavigate();
 
@@ -24,6 +26,7 @@ export default ({
     e.preventDefault();
     setIsSubmitted(true);
     navigate(`/${searchTerms.category}/${searchTerms.idNum}`);
+    document.querySelector(".searchId").value = "";
   };
 
   useEffect(() => {
@@ -73,7 +76,7 @@ export default ({
           <div className="form-floating col-2">
             <input
               type="text"
-              className="form-control"
+              className="form-control searchId"
               name="idNum"
               id="idNum"
               placeholder="ID:"
