@@ -1,0 +1,41 @@
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+@import url('https://fonts.cdnfonts.com/css/canavar');
+
+.navbar-body {
+  background-color: #2d3237;
+  padding: 15px;
+  box-shadow: 0px 0px 4px black;
+}
+
+.site-title {
+  font-family: 'Star Wars', sans-serif;
+  transform: translateY(7px);
+}
+
+.site-title a {
+  color: rgb(255,193,7);
+  text-decoration: none;
+}
+
+.site-button {
+  font-weight: bold;
+}
+
+.my-card-title {
+  font-family: 'CANAVAR', sans-serif;
+}
+
+.card-body h5 {
+  color: #adb5bd;
+}
+
+.card-width {
+  width: max-content;
+  min-width: 400px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.4);
+}
+
+
+.ErrorGIF {
+  box-shadow: 0px 2px 4px rgba(0,0,0,.4);
+}
