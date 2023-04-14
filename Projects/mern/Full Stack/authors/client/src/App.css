@@ -1,0 +1,67 @@
+.author-container {
+  font-size: 1.5rem;
+  width: max-content;
+  min-width: 500px !important;
+}
+
+body {
+  background: linear-gradient(-45deg, #0F2027, #203A43, #2C5364);
+  min-height: 100vh;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.my-navbar {
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 20px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,.3);
+}
+
+.my-shadow {
+  box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.form-control {
+  background-color: rgba(0,0,0, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.form-control:focus {
+  background-color: rgba(0,0,0, 0.15);
+}
+
+.table {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.table-head-color {
+  background-color: rgba(255, 255, 255, 0.03);
+}
