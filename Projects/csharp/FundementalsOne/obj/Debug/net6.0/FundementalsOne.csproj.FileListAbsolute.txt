@@ -1,0 +1,15 @@
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\bin\Debug\net6.0\FundementalsOne.exe
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\bin\Debug\net6.0\FundementalsOne.deps.json
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\bin\Debug\net6.0\FundementalsOne.runtimeconfig.json
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\bin\Debug\net6.0\FundementalsOne.dll
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\bin\Debug\net6.0\FundementalsOne.pdb
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\FundementalsOne.csproj.AssemblyReference.cache
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\FundementalsOne.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\FundementalsOne.AssemblyInfoInputs.cache
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\FundementalsOne.AssemblyInfo.cs
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\FundementalsOne.csproj.CoreCompileInputs.cache
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\FundementalsOne.dll
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\refint\FundementalsOne.dll
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\FundementalsOne.pdb
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\FundementalsOne.genruntimeconfig.cache
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\FundementalsOne\obj\Debug\net6.0\ref\FundementalsOne.dll
