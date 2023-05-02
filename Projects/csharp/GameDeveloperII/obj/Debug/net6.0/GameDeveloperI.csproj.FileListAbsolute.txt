@@ -1,0 +1,15 @@
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\bin\Debug\net6.0\GameDeveloperI.exe
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\bin\Debug\net6.0\GameDeveloperI.deps.json
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\bin\Debug\net6.0\GameDeveloperI.runtimeconfig.json
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\bin\Debug\net6.0\GameDeveloperI.dll
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\bin\Debug\net6.0\GameDeveloperI.pdb
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\GameDeveloperI.csproj.AssemblyReference.cache
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\GameDeveloperI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\GameDeveloperI.AssemblyInfoInputs.cache
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\GameDeveloperI.AssemblyInfo.cs
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\GameDeveloperI.csproj.CoreCompileInputs.cache
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\GameDeveloperI.dll
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\refint\GameDeveloperI.dll
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\GameDeveloperI.pdb
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\GameDeveloperI.genruntimeconfig.cache
+D:\Documents\Work\Coding\Coding Dojo\Assignments\CSharp\Projects\GameDeveloperI\obj\Debug\net6.0\ref\GameDeveloperI.dll
