@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Dojo Survey";
+}
+
+<div class="card col-4 m-auto mt-4">
+    <div class="card-header text-center bg-primary">
+      <h2>Dojo Survey</h2>
+    </div>
+    <div class="card-body col-11 m-auto">
+      <form action="process" method="post">
+
+        <div class="form-floating">
+          <input type="text" name="YourName" id="YourName" placeholder="Your Name:" class="form-control">
+          <label for="YourName">Your Name:</label>
+        </div>
+
+        <div class="form-floating mt-3">
+          <select class="form-select" name="DojoLocation">
+            <option selected hidden disabled>Select Location</option>
+            <option value="Online/Remote">Online/Remote</option>
+            <option value="Chicago, IL">Chicago, IL</option>
+          </select>
+          <label for="DojoLocation">Dojo Location:</label>
+        </div>
+
+        <div class="form-floating mt-3">
+          <select class="form-select" name="FavLanguage">
+            <option selected hidden disabled>Select Language</option>
+            <option value="C#">C#</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+          </select>
+          <label for="FavLanguage">Favorite Language:</label>
+        </div>
+
+        <div class="form-floating mt-3">
+          <textarea class="form-control" placeholder="Comments (Optional):" name="Comments"
+            style="height: 100px"></textarea>
+          <label for="Comments">Comments (Optional):</label>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-primary mt-3">
+
+      </form>
+    </div>
+  </div>
