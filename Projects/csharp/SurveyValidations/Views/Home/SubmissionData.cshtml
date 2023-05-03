@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Submitted Info";
+}
+
+@model Survey
+
+<div class="card col-4 m-auto mt-4">
+    <div class="card-header text-center bg-warning">
+      <h2 class="text-dark">Submitted Info</h2>
+    </div>
+    <div class="card-body">
+      <div class="card-body-content d-flex gap-4">
+
+        <div class="left-side">
+          <p>Name:</p>
+          <p>Dojo Location:</p>
+          <p>Favorite Language:</p>
+          <p>Comments:</p>
+        </div>
+
+        <div class="right-side">
+          <p>@Model.YourName</p>
+          <p>@Model.DojoLocation</p>
+          <p>@Model.FavLanguage</p>
+          @{
+            if (Model.Comments == null)
+            {
+              <p class="text-secondary">No Comment</p>
+            }
+            else
+            {
+              <p>@Model.Comments</p>
+            }
+          }
+        </div>
+
+      </div>
+      <form action="/">
+        <input type="submit" value="Go Back" class="btn btn-primary">
+      </form>
+    </div>
+  </div>
