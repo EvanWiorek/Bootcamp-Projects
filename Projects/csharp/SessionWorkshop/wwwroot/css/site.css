@@ -1,0 +1,40 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: rgb(179, 208, 208);
+}
+
+.validation-text {
+  color: tomato;
+}
+
+.navbar-body {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.top-buttons, .bottom-buttons {
+  display: grid;
+  gap: 1rem;
+  margin: auto;
+}
+
+.session-btn {
+  width: 150px;
+  height: 100px;
+  font-size: 1.3rem;
+  filter: saturate(.8);
+}

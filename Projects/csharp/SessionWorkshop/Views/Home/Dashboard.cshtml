@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<!--Navbar-->
+<div class="navbar-body shadow-sm border-bottom">
+    <div class="navbar-content d-flex justify-content-between col-8 m-auto">
+        <h2>Welcome, @Context.Session.GetString("UserName")!</h2>
+        <form asp-action="ClearSession" asp-controller="Home" method="post">
+            <input type="submit" value="Logout" class="btn btn-danger">
+        </form>
+    </div>
+</div>
+
+<!--Number Changer-->
+<div class="card mt-5 col-3 m-auto shadow-sm">
+    <div class="card-body text-center">
+        <h1>@Context.Session.GetInt32("NewNum")</h1>
+        <div class="buttons-container d-flex p-3">
+            <!--Seperate Routes-->
+            @* <div class="top-buttons">
+            <form asp-action="PlusOne" asp-controller="Home" method="post">
+            <input type="submit" value="+ 1" class="btn btn-warning session-btn">
+            </form>
+            <form asp-action="MinusOne" asp-controller="Home" method="post">
+            <input type="submit" value="- 1" class="btn btn-primary session-btn">
+            </form>
+            </div>
+            <div class="bottom-buttons">
+            <form asp-action="TimesTwo" asp-controller="Home" method="post">
+            <input type="submit" value="x 2" class="btn btn-danger session-btn">
+            </form>
+            <form asp-action="PlusRandom" asp-controller="Home" method="post">
+            <input type="submit" value="+ Random" class="btn btn-success session-btn">
+            </form>
+            </div> *@
+
+            <!--Single Route-->
+            <div class="top-buttons">
+                <form asp-action="ChangeNumber" asp-controller="Home" method="post">
+                    <input type="submit" value="+ 1" class="btn btn-warning session-btn">
+                    <input type="hidden" name="actionType" value="PlusOne">
+                </form>
+                <form asp-action="ChangeNumber" asp-controller="Home" method="post">
+                    <input type="submit" value="- 1" class="btn btn-primary session-btn">
+                    <input type="hidden" name="actionType" value="MinusOne">
+                </form>
+            </div>
+            <div class="bottom-buttons">
+                <form asp-action="ChangeNumber" asp-controller="Home" method="post">
+                    <input type="submit" value="x 2" class="btn btn-danger session-btn">
+                    <input type="hidden" name="actionType" value="TimesTwo">
+                </form>
+                <form asp-action="ChangeNumber" asp-controller="Home" method="post">
+                    <input type="submit" value="+ Random" class="btn btn-success session-btn">
+                    <input type="hidden" name="actionType" value="PlusRandom">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

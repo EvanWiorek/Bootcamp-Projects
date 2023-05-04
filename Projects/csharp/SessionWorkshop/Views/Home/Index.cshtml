@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Session Workshop";
+}
+
+@model User
+
+<div class="card col-5 m-auto shadow-sm mt-5">
+    <div class="card-header text-center">
+        <h1>Session Workshop</h1>
+    </div>
+    <div class="card-body text-center">
+        <h1 class="display-5">Welcome!</h1>
+        <h3>Please give your name:</h3>
+        <form asp-action="Process" asp-controller="Home" method="post" class="pb-3">
+            <div class="form-floating col-7 m-auto">
+                <input asp-for="UserName" class="form-control mt-4" placeholder="Your Name:">
+                <label asp-for="UserName">Your Name:</label>
+            </div>
+            <div class="bottom d-flex flex-column">
+                <span asp-validation-for="UserName" class="validation-text"></span>
+                <input type="submit" value="View Dashboard" class="btn btn-info mt-3 col-5 m-auto">
+            </div>
+        </form>
+    </div>
+</div>
