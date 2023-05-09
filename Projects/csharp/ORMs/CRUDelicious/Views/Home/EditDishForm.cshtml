@@ -1,0 +1,10 @@
+﻿@model Dish
+
+@{
+    ViewData["Title"] = "Edit "+ @Model.Name;
+    ViewData["Action"] = "UpdateDish";
+    ViewData["UpdateRouteId"] = @Model.DishId;
+    ViewData["ButtonText"] = "Update Dish";
+}
+
+@await Html.PartialAsync("_DishForm")

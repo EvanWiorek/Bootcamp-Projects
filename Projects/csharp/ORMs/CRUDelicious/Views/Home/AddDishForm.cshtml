@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Add a new Dish!";
+    ViewData["Action"] = "AddDish";
+    ViewData["ButtonText"] = "Add Dish";
+}
+
+@model Dish
+
+@await Html.PartialAsync("_DishForm")

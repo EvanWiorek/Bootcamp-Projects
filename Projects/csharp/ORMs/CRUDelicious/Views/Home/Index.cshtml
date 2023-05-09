@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Welcome to CRUDelicious";
+}
+
+<div class="card col-lg-6 col-sm-11 m-auto mt-4">
+    <div class="card-header text-center"><h5>Check out some recent dishes:</h5></div>
+    <div class="card-body">
+        @{
+            foreach(Dish? Dish in ViewBag.AllDishes)
+            {
+                <p><a asp-controller="Home" asp-action="ShowDish" asp-route-Id="@Dish?.DishId">@Dish?.Name</a> by @Dish?.Chef</p>
+            }
+        }
+    </div>
+</div>
