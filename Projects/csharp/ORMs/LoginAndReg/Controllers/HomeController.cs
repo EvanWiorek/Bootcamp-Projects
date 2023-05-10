@@ -45,17 +45,17 @@ public class HomeController : Controller
   {
     if (ModelState.IsValid)
     {
-      User? userInDb = _context.Users.FirstOrDefault(u => u.Email == userSubmission.Email);
+      User? userInDb = _context.Users.FirstOrDefault(u => u.Email == userSubmission.LoginEmail);
       if (userInDb == null)
       {
-        ModelState.AddModelError("Email", "Invalid Email/Password");
+        ModelState.AddModelError("LoginEmail", "Invalid Email/Password");
         return View("Index");
       }
       PasswordHasher<LoginUser> hasher = new PasswordHasher<LoginUser>();
-      var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.Password);
+      var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.LoginPassword);
       if (result == 0)
       {
-        ModelState.AddModelError("Email", "Invalid Email/Password");
+        ModelState.AddModelError("LoginEmail", "Invalid Email/Password");
         return View("Index");
       }
       HttpContext.Session.SetInt32("UserId", userInDb.UserId);
