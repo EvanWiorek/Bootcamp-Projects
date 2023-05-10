@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chefs and Dishes | @ViewData["Title"]</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ChefsAndDishes.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar-body border-bottom box-shadow mb-3 p-2">
+            <div class="nav-bottom d-flex justify-content-center gap-3">
+                <a class="@(ViewData["Title"]?.ToString() == "Check out our roster of chefs!" ? "active text-light" : "navlink")"
+                    asp-controller="Home" asp-action="Chefs">Chefs</a>
+                <p class="navlink">|</p>
+                <a class="@(ViewData["Title"]?.ToString() == "Yum! Check out our tasty dishes!" ? "active text-light" : "navlink")"
+                    asp-controller="Home" asp-action="Dishes">Dishes</a>
+                <p class="navlink">|</p>
+                <a class="@(ViewData["Title"]?.ToString() == "Add a Chef" ? "active text-light" : "navlink")"
+                    asp-controller="Home" asp-action="AddChefForm">Add a Chef</a>
+                <p class="navlink">|</p>
+                <a class="@(ViewData["Title"]?.ToString() == "Add a Dish" ? "active text-light" : "navlink")"
+                    asp-controller="Home" asp-action="AddDishForm">Add a Dish</a>
+            </div>
+            <div class="nav-bottom">
+                <h1 class="display-6 text-center">@ViewData["Title"]</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Chefs and Dishes
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

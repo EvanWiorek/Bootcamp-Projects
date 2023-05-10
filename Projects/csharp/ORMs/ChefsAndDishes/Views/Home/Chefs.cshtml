@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Check out our roster of chefs!";
+}
+
+<div class="col-5 m-auto mt-4">
+    <table class="table table-hover table-dark border">
+        <thead>
+            <tr class="table-active">
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Number of Dishes</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @{
+                foreach (Chef? Chef in ViewBag.AllChefs)
+                {
+                    var today = DateTime.Today;
+                    var age = today.Year - Chef.DOB.Year;
+                    <tr>
+                        <td>@Chef.FirstName @Chef.LastName</td>
+                        <td>@age</td>
+                        <td>@Chef.AllDishes.Count()</td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</div>
