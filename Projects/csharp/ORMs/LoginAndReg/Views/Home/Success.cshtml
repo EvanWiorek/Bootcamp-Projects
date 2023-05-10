@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Success";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-2">Success!</h1>
+    @* <h2>Welcome, @Context.Session.GetString("FirstName").</h2> *@
+    <br>
+    <form asp-action="Logout" asp-asp-controller="Home" method="post">
+        <input type="submit" value="Logout" class="btn btn-primary">
+    </form>
+</div>
+
